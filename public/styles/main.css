@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+:root {
+  --primary: rgb(4, 85, 4);
+  --active: yellow;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.active {
+  color: var(--active);
+}
+
+header {
+  width: 100vw;
+  height: 80px;
+  padding: 0 40px;
+  background-color: var(--primary);
+}
+
+nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 20px;
+}
+
+ul > li > a {
+  color: white;
+  font-weight: 800;
+}
+
+main {
+  border: 1px solid black;
+  padding: 40px;
+}
+
+footer {
+  margin: 0 auto;
+  padding: 40px;
+  background-color: gray;
+  color: white;
+}

@@ -18,6 +18,17 @@ li {
   list-style: none;
 }
 
+.btn{
+  padding: 3px 10px;
+  font-size: 16px;
+  transition: all .5s ease-in-out;
+}
+
+.btn:hover{
+  background-color: var(--primary);
+  color: white;
+}
+
 .active {
   color: var(--active);
 }
@@ -47,12 +58,14 @@ ul > li > a {
 }
 
 main {
-  border: 1px solid black;
+  min-height: calc(100vh - 180px);
   padding: 40px;
 }
 
 footer {
-  margin: 0 auto;
+  display: block;
+  margin: auto;
+  text-align: center;
   padding: 40px;
   background-color: gray;
   color: white;

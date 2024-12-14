@@ -1,0 +1,23 @@
+<%- include("../includes/head.ejs") %>
+<link rel="stylesheet" href="/styles/404.css" />
+<link rel="stylesheet" href="/styles/add-product.css" />
+<%- include("../includes/nav.ejs") %>
+<form action="/admin/add-product" method="POST">
+  <input
+    type="text"
+    name="title"
+    id="title"
+    placeholder="Product Title"
+    autocomplete="title"
+  />
+  <input
+    type="text"
+    name="imgUrl"
+    id="imgUrl"
+    placeholder="Product Image imgUrl"
+  />
+  <input type="number" name="price" id="price" placeholder="Product Price" />
+  <textarea name="description" id="description"></textarea>
+  <button type="submit" class="btn">Add Product</button>
+</form>
+<%- include("../includes/end.ejs") %>
